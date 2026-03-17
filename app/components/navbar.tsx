@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { Home, Phone, Menu } from 'lucide-react';
+import { ColorSchemeToggle } from '~/components/ui/color-scheme-toggle/color-scheme-toggle';
 import styles from './navbar.module.css';
 
 export function Navbar() {
@@ -56,6 +57,8 @@ export function Navbar() {
             <Phone size={18} />
             Call Now
           </a>
+
+          <ColorSchemeToggle />
 
           <button className={styles.mobileMenuButton} aria-label="Menu">
             <Menu size={24} />
