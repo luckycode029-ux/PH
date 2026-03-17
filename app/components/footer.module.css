@@ -1,0 +1,137 @@
+.footer {
+  background: var(--color-dark);
+  color: var(--color-neutral-3);
+  padding: var(--space-8) var(--space-5) var(--space-5) var(--space-5);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-8);
+  padding-bottom: var(--space-7);
+  border-bottom: 1px solid var(--color-neutral-10);
+  margin-bottom: var(--space-5);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-neutral-6);
+  margin: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.columnTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 var(--space-2) 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.link {
+  color: var(--color-neutral-6);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: color 0.3s var(--ease);
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contactItem {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-neutral-6);
+}
+
+.contactLink {
+  color: var(--color-neutral-6);
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+
+.contactLink:hover {
+  color: var(--color-primary);
+}
+
+.bottom {
+  text-align: center;
+  padding-top: var(--space-5);
+}
+
+.copyright {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-neutral-7);
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: var(--space-7) var(--space-4) var(--space-5) var(--space-4);
+  }
+
+  .top {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}

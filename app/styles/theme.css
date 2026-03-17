@@ -1,15 +1,19 @@
-/* Typography */
-html {
-  --font-display: 900 var(--font-size-fluid-3) var(--font-transitional);
-  --font-heading: 600 var(--font-size-fluid-2) var(--font-transitional);
-  --font-subheading: 400 var(--font-size-fluid-1) var(--font-system-ui);
-  --font-body: var(--font-size-fluid-0) var(--font-system-ui);
-  --font-caption: var(--font-size-fluid-0) var(--font-system-ui);
-  --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
-}
+@import "./tokens/colors.css";
+@import "./tokens/spacings.css";
+@import "./tokens/typography.css";
+@import "./tokens/decorations.css";
+@import "./tokens/animations.css";
 
-html {
-  /* Neutral colors */
+:root {
+  /* Typography */
+  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-heading: "Montserrat", system-ui, sans-serif;
+  --font-subheading: "Poppins", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-caption: "Inter", system-ui, sans-serif;
+  --font-code: ui-monospace, monospace;
+
+  /* Neutral Colors - Using slate for professional look */
   --color-neutral-1: var(--slate-1);
   --color-neutral-2: var(--slate-2);
   --color-neutral-3: var(--slate-3);
@@ -24,37 +28,22 @@ html {
   --color-neutral-12: var(--slate-12);
   --color-neutral-contrast: var(--slate-contrast);
 
-  /* Accent colors */
-  --color-accent-1: var(--blue-1);
-  --color-accent-2: var(--blue-2);
-  --color-accent-3: var(--blue-3);
-  --color-accent-4: var(--blue-4);
-  --color-accent-5: var(--blue-5);
-  --color-accent-6: var(--blue-6);
-  --color-accent-7: var(--blue-7);
-  --color-accent-8: var(--blue-8);
-  --color-accent-9: var(--blue-9);
-  --color-accent-10: var(--blue-10);
-  --color-accent-11: var(--blue-11);
-  --color-accent-12: var(--blue-12);
-  --color-accent-contrast: var(--blue-contrast);
+  /* Accent Colors - Red for Perfect Homes branding */
+  --color-accent-1: var(--red-1);
+  --color-accent-2: var(--red-2);
+  --color-accent-3: var(--red-3);
+  --color-accent-4: var(--red-4);
+  --color-accent-5: var(--red-5);
+  --color-accent-6: var(--red-6);
+  --color-accent-7: var(--red-7);
+  --color-accent-8: var(--red-8);
+  --color-accent-9: var(--red-9);
+  --color-accent-10: var(--red-10);
+  --color-accent-11: var(--red-11);
+  --color-accent-12: var(--red-12);
+  --color-accent-contrast: var(--red-contrast);
 
-  /* Error colors */
-  --color-error-1: var(--red-1);
-  --color-error-2: var(--red-2);
-  --color-error-3: var(--red-3);
-  --color-error-4: var(--red-4);
-  --color-error-5: var(--red-5);
-  --color-error-6: var(--red-6);
-  --color-error-7: var(--red-7);
-  --color-error-8: var(--red-8);
-  --color-error-9: var(--red-9);
-  --color-error-10: var(--red-10);
-  --color-error-11: var(--red-11);
-  --color-error-12: var(--red-12);
-  --color-error-contrast: var(--red-contrast);
-
-  /* Success colors */
+  /* Success Colors - Green for positive actions */
   --color-success-1: var(--green-1);
   --color-success-2: var(--green-2);
   --color-success-3: var(--green-3);
@@ -68,4 +57,28 @@ html {
   --color-success-11: var(--green-11);
   --color-success-12: var(--green-12);
   --color-success-contrast: var(--green-contrast);
+
+  /* Error Colors */
+  --color-error-1: var(--tomato-1);
+  --color-error-2: var(--tomato-2);
+  --color-error-3: var(--tomato-3);
+  --color-error-4: var(--tomato-4);
+  --color-error-5: var(--tomato-5);
+  --color-error-6: var(--tomato-6);
+  --color-error-7: var(--tomato-7);
+  --color-error-8: var(--tomato-8);
+  --color-error-9: var(--tomato-9);
+  --color-error-10: var(--tomato-10);
+  --color-error-11: var(--tomato-11);
+  --color-error-12: var(--tomato-12);
+  --color-error-contrast: var(--tomato-contrast);
+
+  /* Brand specific */
+  --color-primary: var(--color-accent-9);
+  --color-primary-hover: var(--color-accent-10);
+  --color-primary-text: var(--color-accent-contrast);
+  
+  /* Dark charcoal for contrast */
+  --color-dark: var(--slate-12);
+  --color-light-grey: var(--slate-3);
 }

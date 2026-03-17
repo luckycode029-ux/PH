@@ -1,0 +1,116 @@
+.testimonials {
+  padding: var(--space-9) var(--space-5);
+  background: var(--color-neutral-1);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-2);
+  transition: all 0.3s var(--ease);
+  position: relative;
+}
+
+.card::before {
+  content: '"';
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-5);
+  font-size: 4rem;
+  font-family: Georgia, serif;
+  color: var(--color-accent-3);
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-3);
+}
+
+.content {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-neutral-11);
+  margin: var(--space-5) 0 var(--space-5) 0;
+  position: relative;
+  z-index: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-neutral-4);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent-9) 0%, var(--color-accent-10) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.authorInfo {
+  flex: 1;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.role {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-neutral-10);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .testimonials {
+    padding: var(--space-7) var(--space-4);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
