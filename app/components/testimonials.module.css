@@ -34,6 +34,7 @@
   box-shadow: var(--shadow-2);
   transition: all 0.3s var(--ease);
   position: relative;
+  color: var(--color-success-10);
 }
 
 .card::before {
@@ -57,7 +58,7 @@
   font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.8;
-  color: var(--color-neutral-11);
+  color: var(--color-neutral-5);
   margin: var(--space-5) 0 var(--space-5) 0;
   position: relative;
   z-index: 1;
@@ -94,7 +95,7 @@
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--color-dark);
+  color: rgb(23 39 72);
   margin: 0;
 }
 

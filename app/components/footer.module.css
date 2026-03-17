@@ -58,7 +58,7 @@
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 700;
-  color: white;
+  color: #0d3bdf;
   margin: 0 0 var(--space-2) 0;
 }
 
@@ -134,4 +134,7 @@
     grid-template-columns: 1fr;
     gap: var(--space-6);
   }
+}
+.span1 {
+  color: #d11818;
 }

@@ -1,5 +1,5 @@
-import { Home } from 'lucide-react';
-import styles from './footer.module.css';
+import { Home } from "lucide-react";
+import styles from "./footer.module.css";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,7 +7,7 @@ export function Footer() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -18,7 +18,7 @@ export function Footer() {
           <div className={styles.brand}>
             <div className={styles.logo}>
               <Home className={styles.logoIcon} />
-              <span>Perfect Homes</span>
+              <span className={styles.span1}>Perfect Homes</span>
             </div>
             <p className={styles.tagline}>
               Your trusted partner for buying, selling, constructing, and designing dream homes in Faridabad.
@@ -29,22 +29,50 @@ export function Footer() {
             <h3 className={styles.columnTitle}>Quick Links</h3>
             <ul className={styles.links}>
               <li>
-                <a href="#home" className={styles.link} onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
+                <a
+                  href="#home"
+                  className={styles.link}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("home");
+                  }}
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className={styles.link} onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>
+                <a
+                  href="#about"
+                  className={styles.link}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("about");
+                  }}
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#services" className={styles.link} onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>
+                <a
+                  href="#services"
+                  className={styles.link}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("services");
+                  }}
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="#projects" className={styles.link} onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>
+                <a
+                  href="#projects"
+                  className={styles.link}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("projects");
+                  }}
+                >
                   Projects
                 </a>
               </li>
@@ -54,11 +82,21 @@ export function Footer() {
           <div className={styles.column}>
             <h3 className={styles.columnTitle}>Services</h3>
             <ul className={styles.links}>
-              <li><span className={styles.link}>Property Sale</span></li>
-              <li><span className={styles.link}>Property Purchase</span></li>
-              <li><span className={styles.link}>Construction</span></li>
-              <li><span className={styles.link}>Interior Design</span></li>
-              <li><span className={styles.link}>Renovation</span></li>
+              <li>
+                <span className={styles.link}>Property Sale</span>
+              </li>
+              <li>
+                <span className={styles.link}>Property Purchase</span>
+              </li>
+              <li>
+                <span className={styles.link}>Construction</span>
+              </li>
+              <li>
+                <span className={styles.link}>Interior Design</span>
+              </li>
+              <li>
+                <span className={styles.link}>Renovation</span>
+              </li>
             </ul>
           </div>
 
@@ -80,17 +118,13 @@ export function Footer() {
                   perfecthomesmk@gmail.com
                 </a>
               </div>
-              <div className={styles.contactItem}>
-                Faridabad, Haryana
-              </div>
+              <div className={styles.contactItem}>Faridabad, Haryana</div>
             </div>
           </div>
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.copyright}>
-            © {currentYear} Perfect Homes. All rights reserved.
-          </p>
+          <p className={styles.copyright}>© {currentYear} Perfect Homes. All rights reserved.</p>
         </div>
       </div>
     </footer>
