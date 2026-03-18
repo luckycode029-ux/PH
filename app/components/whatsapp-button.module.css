@@ -4,12 +4,12 @@
   right: var(--space-5);
   width: 60px;
   height: 60px;
-  background: #25D366;
+  background: var(--accent-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.4);
   cursor: pointer;
   transition: all 0.3s var(--ease);
   z-index: 1000;
@@ -19,7 +19,7 @@
 
 .button:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 6px 20px rgba(255, 76, 76, 0.5);
 }
 
 .icon {

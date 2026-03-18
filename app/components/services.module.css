@@ -1,6 +1,6 @@
 .services {
   padding: var(--space-9) var(--space-5);
-  background: white;
+  background: var(--bg-primary);
 }
 
 .container {
@@ -17,14 +17,14 @@
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: rgb(161 17 17);
+  color: var(--text-white);
   margin: 0 0 var(--space-4) 0;
 }
 
 .subtitle {
   font-family: var(--font-body);
   font-size: 1.125rem;
-  color: var(--color-neutral-6);
+  color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -36,23 +36,23 @@
 }
 
 .card {
-  background: var(--color-neutral-1);
+  background: var(--bg-secondary);
   border-radius: var(--radius-4);
   padding: var(--space-6);
-  transition: all 0.3s var(--ease);
-  border: 1px solid var(--color-neutral-4);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-3);
-  border-color: var(--color-primary);
+  box-shadow: 0 0 15px rgba(229, 57, 53, 0.2);
+  border-color: var(--accent-primary);
 }
 
 .iconWrapper {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, var(--color-accent-3) 0%, var(--color-accent-5) 100%);
+  background: rgba(229, 57, 53, 0.1);
   border-radius: var(--radius-3);
   display: flex;
   align-items: center;
@@ -61,14 +61,14 @@
 }
 
 .icon {
-  color: var(--color-primary);
+  color: var(--accent-primary);
 }
 
 .cardTitle {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-dark);
+  color: var(--text-white);
   margin: 0 0 var(--space-3) 0;
 }
 
@@ -76,7 +76,7 @@
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--color-neutral-11);
+  color: var(--text-secondary);
   margin: 0;
 }
 

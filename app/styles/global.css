@@ -1,8 +1,10 @@
 html {
-  font: var(--font-body);
-  color: var(--color-neutral-11);
-  background-color: var(--color-neutral-1);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  scroll-behavior: smooth;
 }
+
 
 .sr-only {
   position: absolute;

@@ -1,6 +1,6 @@
 .about {
   padding: var(--space-9) var(--space-5);
-  background: var(--color-neutral-1);
+  background: var(--bg-secondary-alt);
 }
 
 .container {
@@ -34,7 +34,7 @@
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: var(--color-dark);
+  color: var(--text-white);
   margin: 0 0 var(--space-4) 0;
   line-height: 1.2;
 }
@@ -43,7 +43,7 @@
   font-family: var(--font-body);
   font-size: 1.125rem;
   line-height: 1.8;
-  color: var(--color-neutral-11);
+  color: var(--text-secondary);
   margin: 0 0 var(--space-6) 0;
 }
 
@@ -60,12 +60,12 @@
   padding: var(--space-3) 0;
   font-family: var(--font-body);
   font-size: 1.1rem;
-  color: var(--color-neutral-12);
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
 .checkIcon {
-  color: var(--color-success-9);
+  color: var(--accent-primary);
   flex-shrink: 0;
 }
 
@@ -78,16 +78,17 @@
 .stat {
   text-align: center;
   padding: var(--space-4);
-  background: white;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-3);
-  box-shadow: var(--shadow-1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
 .statNumber {
   font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--accent-primary);
   margin: 0 0 var(--space-2) 0;
   line-height: 1;
 }
@@ -95,7 +96,7 @@
 .statLabel {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: var(--color-neutral-11);
+  color: var(--text-secondary);
   margin: 0;
 }
 

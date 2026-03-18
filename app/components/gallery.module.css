@@ -1,6 +1,6 @@
 .gallery {
   padding: var(--space-9) var(--space-5);
-  background: white;
+  background: var(--bg-primary);
 }
 
 .container {
@@ -17,14 +17,14 @@
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: rgb(166 3 3);
+  color: var(--accent-primary);
   margin: 0 0 var(--space-4) 0;
 }
 
 .subtitle {
   font-family: var(--font-body);
   font-size: 1.125rem;
-  color: var(--color-neutral-6);
+  color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -58,7 +58,7 @@
 
 .item:hover {
   transform: scale(1.02);
-  box-shadow: var(--shadow-3);
+  box-shadow: 0 0 18px rgba(229, 57, 53, 0.35);
   z-index: 1;
 }
 

@@ -1,9 +1,20 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import { Home, Phone, Menu } from 'lucide-react';
 import { ColorSchemeToggle } from '~/components/ui/color-scheme-toggle/color-scheme-toggle';
 import styles from './navbar.module.css';
 
 export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -12,7 +23,8 @@ export function Navbar() {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
           <Home className={styles.logoIcon} />

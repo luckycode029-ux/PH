@@ -1,6 +1,6 @@
 .projects {
   padding: var(--space-9) var(--space-5);
-  background: var(--color-neutral-1);
+  background: var(--bg-secondary-alt);
 }
 
 .container {
@@ -17,14 +17,14 @@
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: var(--color-dark);
+  color: var(--text-white);
   margin: 0 0 var(--space-4) 0;
 }
 
 .subtitle {
   font-family: var(--font-body);
   font-size: 1.125rem;
-  color: var(--color-neutral-11);
+  color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -36,18 +36,20 @@
 }
 
 .card {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: var(--radius-4);
   overflow: hidden;
-  box-shadow: var(--shadow-2);
-  transition: all 0.3s var(--ease);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
   display: flex;
   flex-direction: column;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-4);
+  border-color: var(--accent-primary);
+  box-shadow: 0 18px 35px rgba(229, 57, 53, 0.25);
 }
 
 .imageWrapper {
@@ -72,8 +74,8 @@
   position: absolute;
   top: var(--space-4);
   left: var(--space-4);
-  background: var(--color-accent-9);
-  color: white;
+  background: var(--accent-primary);
+  color: var(--text-white);
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-2);
   font-family: var(--font-body);
@@ -93,30 +95,32 @@
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
-  color: rgb(7 7 135);
+  color: var(--text-white);
   margin: 0 0 var(--space-2) 0;
 }
 
 .location {
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: var(--color-neutral-10);
+  color: var(--text-secondary);
   margin: 0 0 var(--space-4) 0;
   display: flex;
   align-items: center;
   gap: var(--space-2);
-  background-color: var(--color-neutral-12);
+  background-color: rgba(229, 57, 53, 0.08);
+  padding: var(--space-3);
+  border-radius: var(--radius-2);
 }
 
 .locationIcon {
-  color: var(--color-primary);
+  color: var(--accent-primary);
 }
 
 .description {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--color-accent-3);
+  color: var(--text-secondary);
   margin: 0 0 var(--space-5) 0;
   flex: 1;
 }
@@ -125,7 +129,7 @@
   font-family: var(--font-heading);
   font-size: 0.95rem;
   font-weight: 700;
-  color: rgb(22 68 162);
+  color: var(--text-white);
   margin: 0 0 var(--space-3) 0;
 }
 
@@ -144,11 +148,11 @@
   gap: var(--space-2);
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: var(--color-neutral-2);
+  color: var(--text-secondary);
 }
 
 .checkIcon {
-  color: var(--color-success-9);
+  color: var(--accent-primary);
   flex-shrink: 0;
 }
 
