@@ -107,6 +107,7 @@
 @media (max-width: 640px) {
   .hero {
     min-height: 80vh;
+    padding-top: 64px; /* Add space for fixed navbar */
   }
 
   .content {
